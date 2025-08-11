@@ -1,0 +1,23 @@
+server:
+  port: ${server.port:9000}
+
+frontend:
+  url: ${frontend.url.value:http://localhost:5173}
+
+spring:
+  datasource:
+    url: ${datasource.url:jdbc:postgresql://localhost:5432/postgres}
+    username: ${datasource.username:postgres}
+    password: ${datasource.password:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  data:
+    mongodb:
+      host: ${mongo.host:localhost}
+      port: ${mongo.port:27017}
+      database: ${mongo.database:mongo}
+
+country:
+  url: https://restcountries.com/v3.1/all?fields=cca2,cca3,capital,region,subregion,area,population,independent

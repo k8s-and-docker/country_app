@@ -1,0 +1,1 @@
+export const ALTER_COUNTRY_VALUE_IN_CASE_EMPTY = "Not specified";

@@ -1,0 +1,25 @@
+.country-list-element {
+    border: 3px solid silver;
+    padding: .5rem;
+    border-radius: .2rem;
+
+    width: calc((100% - 5rem) / 3);
+    min-width: 150px;
+}
+
+.country-list-element-link {
+    display: flex;
+    gap: .5rem;
+    align-items: flex-end;
+}
+
+.country-list-element-link__value {
+    padding: .4rem;
+    border: 2px solid silver;
+    border-radius: .4rem;
+    color: white;
+
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,32 @@
+.skeleton {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+
+    padding: 2rem;
+    border: 4px solid silver;
+    border-radius: 2rem;
+
+    width: 80lvw;
+    height: 80lvh;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+header, footer {
+    background: silver;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main {
+    max-height: 100lvh;
+    overflow-y: auto;
+    height: 100%;
+}
