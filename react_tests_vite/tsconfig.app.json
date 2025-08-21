@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "paths": {
+      "components/*": ["src/components/*"],
+      "hooks": ["src/hooks"],
+      "models": ["src/models"],
+      "models/states": ["src/models/states"],
+      "api": ["src/http/index.ts"],
+      "services": ["src/service"],
+      "appRoutes": ["src/routes"],
+      "my_reducers": ["src/store/reducers"],
+      "my_selectors": ["src/store/reducers/selectors"],
+
+      "test_constants": ["src/tests/constants"],
+      "test_utils": ["src/tests/utils"]
+    },
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src", "css.d.ts"]
+}

@@ -1,0 +1,22 @@
+.list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    padding: .3rem 1rem;
+    border: 2px solid silver;
+    border-radius: .6rem;
+}
+
+.active {
+    cursor: default;
+    opacity: .5;
+}

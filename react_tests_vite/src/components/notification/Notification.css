@@ -1,0 +1,47 @@
+.notification {
+    position: fixed;
+    top: 20%;
+    left: 50.5%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    padding: 2rem .5rem .5rem .5rem;
+    border: 3px solid var(--main-bd-clr);
+    border-radius: .4rem;
+
+    width: 250px;
+}
+
+.notification div {
+    padding: .4rem;
+    border: 1px solid;
+    border-radius: .3rem;
+
+    user-select: none;
+}
+
+.notification button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border-left: 2px solid var(--main-bd-clr);
+    border-bottom: 2px solid var(--main-bd-clr);
+
+    border-bottom-left-radius: .4rem;
+
+    font-size: 1.05rem;
+
+    padding: .2rem .6rem;
+
+    transition: color .2s, background .2s;
+}
+
+.notification button:hover {
+    color: var(--main-clr);
+    background: #ff2c2c;
+}

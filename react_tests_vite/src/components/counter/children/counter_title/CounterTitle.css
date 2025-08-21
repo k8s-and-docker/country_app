@@ -1,0 +1,16 @@
+.counter-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter-title__value {
+    font-size: 3rem;
+    color: #0074D9;
+}
+
+.counter-title__btn {
+    border: 2px solid silver;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+}
