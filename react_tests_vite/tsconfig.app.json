@@ -19,7 +19,9 @@
       "my_selectors": ["src/store/reducers/selectors"],
 
       "test_constants": ["src/tests/constants"],
-      "test_utils": ["src/tests/utils"]
+      "test_utils": ["src/tests/utils"],
+
+      "env_constants": ["dotenv.config.ts"]
     },
 
     /* Bundler mode */
@@ -38,5 +40,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "css.d.ts"]
+  "include": ["src",
+    "css.d.ts"
+  ]
 }
