@@ -9,13 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "cross-env MODE_TYPE=test vitest",
-
-    "e2e:init": "cross-env MODE_TYPE=test start-server-and-test dev http://localhost:9000 \"playwright test src/tests/e2e/components\""
+    "e2e:init": "cross-env MODE_TYPE='test' start-server-and-test dev http://localhost:9000 \"playwright test --config=playwright.config.ts\""
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "axios": "^1.11.0",
-    "dotenv": "^17.2.1",
     "immer": "^10.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -31,13 +29,16 @@
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
+    "@vitest/browser": "3.2.4",
     "@vitest/coverage-v8": "^3.2.4",
     "cross-env": "^10.0.0",
+    "dotenv": "^17.2.1",
     "eslint": "^9.33.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "jsdom": "^26.1.0",
+    "playwright": "^1.55.0",
     "start-server-and-test": "^2.0.13",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",

@@ -7,6 +7,7 @@ export const rootReducer = combineReducers({
 
 export const initReduxStore = (
     initialState?: Partial<ReturnType<typeof rootReducer>>) => {
+
     return configureStore({
         reducer: rootReducer,
         preloadedState: initialState
