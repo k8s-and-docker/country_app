@@ -1,12 +1,12 @@
-import { defineConfig } from 'vitest/config'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vitest/config';
+import react from '@vitejs/plugin-react';
 import * as path from "node:path";
-import {SERVER_PORT} from "./dotenv.config.ts";
+import { SERVER_PORT } from "./dotenv.config.ts";
 
 export default defineConfig({
   plugins: [react()],
   server: {
-      port: SERVER_PORT
+    port: SERVER_PORT
   },
   test: {
     environment: 'jsdom',
@@ -25,11 +25,9 @@ export default defineConfig({
       states: path.resolve(__dirname, 'src/models/states'),
       my_reducers: path.resolve(__dirname, 'src/store/reducers'),
       my_selectors: path.resolve(__dirname, 'src/store/reducers/selectors'),
-
       test_constants: path.resolve(__dirname, 'src/tests/constants'),
       test_utils: path.resolve(__dirname, 'src/tests/utils'),
-
       env_constants: path.resolve(__dirname, 'dotenv.config.ts')
-    },
-  },
-})
+    }
+  }
+});

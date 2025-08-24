@@ -40,7 +40,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src",
-    "css.d.ts"
+  "include": [
+    "src",
+    "css.d.ts",
+    "vite-env.d.ts",
+    "playwright.config.ts",
+    "dotenv.config.ts"
   ]
 }
